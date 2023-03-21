@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:flexDirection="column">
+
+    <EditText
+        android:id="@+id/number_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:textSize="33sp"
+        android:textColor="@color/black"
+        app:layout_flexGrow="1" />
+
+
+    <GridLayout
+        android:id="@+id/activity_test_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:rowCount="5"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        app:layout_flexGrow="3">
+
+        <com.example.calculator.IconButton
+            android:id="@+id/button_clear"
+            android:text="C"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="-1dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/shape_gray"
+            android:textSize="33sp"
+            android:textColor="@color/button_color"/>
+
+        <com.example.calculator.IconButton
+            android:id="@+id/button_div"
+            android:text="@string/dev"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="-1dp"
+            android:layout_marginTop="0dp"
+            android:textSize="33sp"
+            android:background="@drawable/shape_gray"
+            android:textColor="@color/button_color"/>
+
+        <com.example.calculator.IconButton
+            android:id="@+id/button_mul"
+            android:text="@string/mul"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="-1dp"
+            android:layout_marginTop="0dp"
+            android:textSize="33sp"
+            android:background="@drawable/shape_gray"
+            android:textColor="@color/button_color"/>
+
+        <com.example.calculator.IconButton
+            android:id="@+id/button_del"
+            android:text="@string/clear"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="-1dp"
+            android:layout_marginTop="0dp"
+            android:textSize="33sp"
+            android:background="@drawable/shape_gray"
+            android:textColor="@color/button_color"/>
+
+        <com.example.calculator.IconButton
+            android:id="@+id/button_7"
+            android:text="7"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="-1dp"
+            android:textSize="33sp"
+            android:background="@drawable/shape"
+            android:textColor="@color/black"/>
+
+        <com.example.calculator.IconButton
+            android:id="@+id/button_8"
+            android:text="8"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="-1dp"
+            android:textSize="33sp"
+            android:background="@drawable/shape"
+            android:textColor="@color/black"/>
+
+        <com.example.calculator.IconButton
+            android:id="@+id/button_9"
+            android:text="9"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textSize="33sp"
+            android:layout_margin="-1dp"
+            android:background="@drawable/shape"
+            android:textColor="@color/black"/>
+
+        <com.example.calculator.IconButton
+            android:id="@+id/button_sub"
+            android:text="@string/sub"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textSize="33sp"
+            android:layout_margin="-1dp"
+            android:background="@drawable/shape_gray"
+            android:textColor="@color/button_color"/>
+
+        <com.example.calculator.IconButton
+            android:id="@+id/button_4"
+            android:text="4"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="-1dp"
+            android:textSize="33sp"
+            android:background="@drawable/shape"
+            android:textColor="@color/black"/>
+
+        <com.example.calculator.IconButton
+            android:id="@+id/button_5"
+            android:text="5"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textSize="33sp"
+            android:layout_margin="-1dp"
+            android:background="@drawable/shape"
+            android:textColor="@color/black"/>
+
+        <com.example.calculator.IconButton
+            android:id="@+id/button_6"
+            android:text="6"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="-1dp"
+            android:textSize="33sp"
+            android:background="@drawable/shape"
+            android:textColor="@color/black"/>
+
+        <com.example.calculator.IconButton
+            android:id="@+id/button_add"
+            android:text="@string/add"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textSize="33sp"
+            android:layout_margin="-1dp"
+            android:background="@drawable/shape_gray"
+            android:textColor="@color/button_color"/>
+
+        <com.example.calculator.IconButton
+            android:id="@+id/button_1"
+            android:text="1"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textSize="33sp"
+            android:layout_margin="-1dp"
+            android:background="@drawable/shape"
+            android:textColor="@color/black"/>
+
+        <com.example.calculator.IconButton
+            android:id="@+id/button_2"
+            android:text="2"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textSize="33sp"
+            android:layout_margin="-1dp"
+            android:background="@drawable/shape"
+            android:textColor="@color/black"/>
+
+        <com.example.calculator.IconButton
+            android:id="@+id/button_3"
+            android:text="3"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="-1dp"
+            android:textSize="33sp"
+            android:background="@drawable/shape"
+            android:textColor="@color/black"/>
+
+        <com.example.calculator.IconButton
+            android:id="@+id/button_equal"
+            android:text="="
+            android:layout_rowWeight="2"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:textSize="33sp"
+            android:layout_rowSpan="2"
+            android:layout_margin="-1dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/shape_blue"
+            android:textColor="@color/white"/>
+        <com.example.calculator.IconButton
+            android:id="@+id/button_percent"
+            android:text="@string/percent"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textSize="33sp"
+            android:layout_margin="-1dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/shape"
+            android:textColor="@color/black"/>
+        <com.example.calculator.IconButton
+            android:id="@+id/button_0"
+            android:text="0"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="-1dp"
+            android:layout_marginBottom="0dp"
+            android:textSize="33sp"
+            android:background="@drawable/shape"
+            android:textColor="@color/black"/>
+        <com.example.calculator.IconButton
+            android:id="@+id/button_point"
+            android:text="."
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textSize="33sp"
+            android:layout_margin="-1dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/shape"
+            android:textColor="@color/black"/>
+    </GridLayout>
+
+
+
+
+
+</com.google.android.flexbox.FlexboxLayout>
